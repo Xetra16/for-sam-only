@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+<title> My Sam <3</title>
+<style>
+
+body {
+  background-image: url("Babiii.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+form {
+	margin: auto;
+}
+
+h1, h2, h3 {
+	color: white;
+}
+
+h1 {
+	padding-top: 50px;
+}
+
+#VerifyForm {
+	display: none;
+	width: 200px;
+	height: 120px;
+	padding: 20px;
+	border: 5px #FFCCD4 outset;
+	margin-top: 100px;
+	margin-left: 750px;
+	background-color: #FFE2E6;
+	outline-style: outset;
+	outline-color: #FFB6C1;
+	outline-width: thick;
+}
+
+.cute {
+	background-color: #FEC5E5;
+}
+
+.cute:focus {
+    background-color: #FCBAC3;
+    color: black;
+    outline: none;
+}
+
+
+
+h3 {
+	display: none;
+}
+
+#VerifySam {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	}
+</style>
+</head>
+<body>
+
+<h1>Are you Samielle Sotelo?</h1>
+<div id="VerifySam">
+<button onclick="Sam()"> Yes </button>
+<button onclick="NoSam()"> No </button>
+</div>
+<h3 id="Sam2">Input the gmail then:)</h3>
+
+<div id="VerifyForm">
+<center>
+	<form name="myForm" action="/Users/MiChAel/Desktop/Jazrell%20Files/Coding/Sammie/My Everything.html" method="get" onsubmit="return validateForm()">
+		<label for="fname">Email</label><br>
+		<input name="fname"class="cute" type="email" id="email" name="email" autocomplete="off" placeholder="Samielle@iloveyou.com
+		><br>
+		<label for="lname">Password</label><br>
+		<input name="lname" class="cute" type="password" id="password" name="password">
+	<br>
+	<input type="submit">
+	</form>
+<center>
+</div>
+
+</body>
+</html>
+
+<script>
+	function Sam() {
+	alert("wehhh");
+	alert("sure ka?");
+	document.getElementById("Sam2").style.display = "block";
+	document.getElementById("VerifySam").style.display = "none";
+	document.getElementById("VerifyForm").style.display = "block";
+	}
+	
+	function NoSam() {
+	alert("oh bat ka nandito?");
+	alert("Che");
+	alert("alis :)");
+	}
+	
+	function validateForm() {
+	let x = document.forms["myForm"]["fname"].value;
+	let y = document.forms["myForm"]["lname"].value;
+	if (x !== "Samielle@bakitayawmogumawangemail.com" || y !== "fuck you") {
+	alert("Wrong email and Password");
+	return false
+	} else if (x == "Samielle@bakitayawmogumawangemail.com" || y == "fuck you") {
+	return;
+	} else {
+	alert("wrong username and Password");
+	}
+}
+</script>
